@@ -3,3 +3,10 @@ Re)configuring the Archive explores possibilities for presenting and interacting
 
 This a model that allows you to organize data in 2 different cumulative ways.
 To get started please follow this steps:
+
+#First:
+
+Create a JSON file with the same parameters as "projects.json"
+Keep in mind that:
+"STARTING POINTS" works with the cluster-mode
+"MAIN KEYWORDS" creates the netwok
