@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> (re)configuring the archive </title>
+    <meta charset="utf-8">
+    <link rel="icon" type="images/png" href="square-png.png">
+    <link rel="stylesheet" href="f3.css">
+    <script src="p5.min.js"></script>
+</head>
+
+<body>
+    <div class="filters">
+       
+                <div class="div1"> 
+                <div class="lefttopnav">
+                <p class="t1">(RE)CONFIGURING THE ARCHIVE  <span class="subtitle">◼  Experiments in Content Visualization and Exploration </span></p>
+                </div> 
+                </div>
+
+
+                <div class="div4">
+                    <div class="rightnav">
+                    <a href="about.html">
+                        <p class="titleabout">about</p>
+                    </a></div></div>
+
+
+                <div class="div2"> 
+                    <div class="topnav"><input type="checkbox" name="mode-grouped" value=".grouped" id="mode-grouped"><label
+                        for="grouped">
+                        <p class = "top">keyword clusters</p>
+                        <p class="sub">THEMATIC GROUPS</p>
+                    </label></div>
+               </div>
+
+
+                <div class="div3"> 
+                    <div class="topnav"><input type="checkbox" name="mode-network" value=".network" id="mode-network"><label
+                        for="network">
+                        <p class="top">foundation network</p>
+                        <p class="sub">LINKING APPROACHES</p>
+                    </label></div>
+                </div>
+
+                <div class="div5"></div>
+
+      
+
+    </div>
+
+   <div id="network-keywords"></div>
+
+   
+
+    <div id="viewport">
+
+        <div role="alert" id='alert-if-safari'></div>
+        <script>
+        
+            var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            if (is_safari) {
+                const alert_div = document.getElementById('alert-if-safari')
+                alert_div.className = 'alert-safari'
+                alert_div.innerHTML = '<p class="disclaimer-1">! SAFARI DISCLAIMER !</p><p class="disclaimer-2">This website is not optimized for Safari browser. <br> Try to re-open on one of the browsers listed bellow:</p> <p class="browser-list">◼ Chrome ◼ Firefox ◼ Opera ◼ Microsoft Edge'
+            }
+    
+        </script>
+
+    </div>
+
+
+         
+
+
+    <div id="detail">
+        <h3 class="keywords"></h3>
+        <img class="icon"></img>
+        <h3 class="author"></h3>  
+       
+          
+    </div>
+
+    <script src="app.js"></script>
+    <script src="viz.js"></script>
+
+    
+</body>
+
+</html>
